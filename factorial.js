@@ -35,7 +35,7 @@ function factorial(n) {
         console.log(arr);
         let result = 1;
         for (let i=0; i<arr.length; i++) {
-            result = arr[i] * result
+            result *= arr[i]
         }
         return result
     
