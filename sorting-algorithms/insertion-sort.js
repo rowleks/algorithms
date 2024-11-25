@@ -23,5 +23,4 @@ function inSort(arr) {
         arr[j+1] = numToInsert;
     }
 
-    return arr
 }
