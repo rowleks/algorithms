@@ -85,5 +85,58 @@ class LinkedList {
         this.size--
         return removedNode
     }
+
+    peekHead()
+    {
+        if(!this.size) { console.log('List is empty') 
+            return null;
+        }
+        else 
+        {
+            console.log(`Head is ${this.head.value}`)
+           return this.head.value; 
+        }
+    }
+    peekTail()
+    {
+        if(!this.size) { console.log('List is empty') 
+            return null;
+        }
+        else 
+        {
+            console.log(`Tail is ${this.tail.value}`)
+           return this.tail.value; 
+        }
+    }
+
+    isEmpty()
+    {
+        return this.size === 0;
+    }
+
+    length()
+    {
+        return this.size;
+    }
+
+    print()
+    {
+        if(!this.size) { console.log('List is empty') 
+            return null;
+        }
+        else 
+        {
+            const arr = []
+            let currNode = this.head;
+            while(currNode)
+            {
+                arr.push(currNode.value)
+                currNode=currNode.next;
+            }
+            arr.push(null)
+            console.log(arr.join(' --> '))
+        }
+    }
 }
 
+export default LinkedList;
