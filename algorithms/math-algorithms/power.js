@@ -9,7 +9,7 @@ e.g:
  */
 
 function isPowerOfTwo(n) {
-    if (n<=0) return false;
+    if (n<1) return false;
     for (let i=0; i<n; i++)  {
     if (Math.pow(2,i) === n) { console.log(i) 
     return true; };
